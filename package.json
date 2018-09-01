@@ -1,0 +1,18 @@
+{
+  "name": "quiniela-node",
+  "version": "1.0.0",
+  "description": "An example of an api for a quiniela (football/soccer pools) for Russia World Cup",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alejandro Gomez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "helmet": "^3.12.1",
+    "moment": "^2.22.2",
+    "pg": "^7.4.1"
+  }
+}
