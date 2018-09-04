@@ -21,6 +21,9 @@ if (PROD){
 app.use("/teams",teams)
 .use('/matches', matches)
 .use('/users', users)
+.use('/', (req, res) => {
+  res.status(200).json({status:"ok"});
+})
 .use((req, res, next) => {
   res.status(404).json({status:"error", msg:"Page cannot be found!"});
 });
