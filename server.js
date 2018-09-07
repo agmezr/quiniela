@@ -21,7 +21,7 @@ if (PROD){
 app.use("/teams",teams)
 .use('/matches', matches)
 .use('/users', users)
-.use('/', (req, res) => {
+.use('/index', (req, res, next) => {
   res.status(200).json({status:"ok"});
 })
 .use((req, res, next) => {
